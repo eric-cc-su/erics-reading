@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eric's Reading</title>
+        <meta name="description" content="Keeping track of books Eric is reading and have read" />
+        <meta name="keywords" content="book,read,reading" />
+        <meta name="author" content="Eric's Reading">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:site_name" content="Eric's Reading" />
+        <meta property="og:title" content="Eric's Reading" />
+        <meta property="og:url" content="https://ericsreading.com" />
+        <meta property="og:description" content="Keeping track of books Eric is reading and have read" />
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Eric's Reading">
+        <meta name="twitter:description" content="Keeping track of books Eric is reading and have read" />
+
+        <style>
+            html {
+                height: 100%;
+            }
+            body {
+                font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+                height: 100%;
+                margin: 0;
+            }
+
+            h4, h5, h6 {
+                font-weight: normal;
+            }
+
+            .column-left, .column-right {
+                width: 50%;
+            }
+
+            .jumbotron {
+                background: rgb(91,197,255);
+                background: linear-gradient(180deg, rgba(91,197,255,1) 0%, rgba(33,177,255,1) 100%);
+                height: 100%;
+                display: flex;
+            }
+
+            .book-title-text-container h2,
+            .book-title-text-container h4 {
+                font-style: italic;
+                font-weight: normal;
+            }
+
+            .book-title-text-container h2 {
+                margin-bottom: 10px;
+            }
+
+            .book-title-text-container h4 {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            .book-title-text-container, .title-text-container {
+                color: white;
+                padding-left: 40px;
+                padding-top: 40%;
+            }
+
+            .title-text-container {
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .column-left, .column-right {
+                    width: 100%;
+                }
+
+                .jumbotron {
+                    flex-direction: column;
+                }
+
+                .book-title-text-container, .title-text-container {
+                    padding-left: 0;
+                }
+
+                .book-title-text-container {
+                    padding-top: 0;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <div class="column-left">
+                <div class="title-text-container">
+                    <h1>Eric's Reading:</h1>
+                    <!--<h4>A website of what Eric's reading and what Eric has read.</h4>-->
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="book-title-text-container">
+                    <h2>Fluent Forever</h2>
+                    <h4>Gabriel Wyner</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
