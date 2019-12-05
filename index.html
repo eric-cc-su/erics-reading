@@ -32,6 +32,20 @@
                 font-weight: normal;
             }
 
+            .book-container {
+                margin: auto;
+            }
+
+            .book-container .book-cover-img {
+                -webkit-box-shadow: 3px 5px 10px 0px rgba(101,101,101,1);
+                -moz-box-shadow: 3px 5px 10px 0px rgba(101,101,101,1);
+                box-shadow: 3px 5px 10px 0px rgba(101,101,101,1);
+            }
+
+            .center-align {
+                text-align: center;
+            }
+
             .column-left, .column-right {
                 width: 50%;
             }
@@ -39,33 +53,38 @@
             .jumbotron {
                 background: rgb(91,197,255);
                 background: linear-gradient(180deg, rgba(91,197,255,1) 0%, rgba(33,177,255,1) 100%);
-                height: 100%;
-                display: flex;
+                min-height: 100%;
+                min-width: 100%;
+                position: absolute;
             }
 
             .book-title-text-container h2,
             .book-title-text-container h4 {
                 font-style: italic;
-                font-weight: normal;
             }
 
-            .book-title-text-container h2 {
+            .book-title-text-container .book-title {
+                font-weight: 300;
                 margin-bottom: 10px;
             }
 
-            .book-title-text-container h4 {
+            .book-title-text-container .book-author {
+                font-weight: lighter;
                 margin-bottom: 10px;
                 margin-top: 10px;
             }
 
-            .book-title-text-container, .title-text-container {
+            .book-title-text-container {
                 color: white;
-                padding-left: 40px;
-                padding-top: 40%;
             }
 
-            .title-text-container {
+            .site-title-header {
+                color: white;
                 text-align: center;
+            }
+
+            .site-title-header {
+                margin-top: 60px;
             }
 
             @media only screen and (max-width: 600px) {
@@ -73,17 +92,16 @@
                     width: 100%;
                 }
 
-                .jumbotron {
+                /* .jumbotron {
                     flex-direction: column;
-                }
+                } */
 
-                .book-title-text-container, .title-text-container {
+                .book-title-text-container {
                     padding-left: 0;
                 }
 
                 .book-title-text-container {
                     padding-top: 0;
-                    text-align: center;
                 }
             }
         </style>
@@ -91,10 +109,22 @@
 
     <body>
         <div class="jumbotron">
+            <h1 class="site-title-header">Eric's Reading:</h1>
+            <div class="books-carousel">
+                <div class="book-container" style="width: 248px;">
+                    <img class="book-cover-img" src="make_your_mark.jpg" alt="Make your Mark cover image" />
+                    <div class="book-title-text-container center-align">
+                        <h2 class="book-title">Make Your Mark: The Creative's Guide to Building a Business with Impact</h2>
+                        <h4 class="book-author">99U</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="jumbotron center-align">
             <div class="column-left">
-                <div class="title-text-container">
+                <div class="title-text-container center-align">
                     <h1>Eric's Reading:</h1>
-                    <!--<h4>A website of what Eric's reading and what Eric has read.</h4>-->
+                    <!--<h4>A website of what Eric's reading and what Eric has read.</h4>--
                 </div>
             </div>
             <div class="column-right">
@@ -103,6 +133,6 @@
                     <h4>Gabriel Wyner</h4>
                 </div>
             </div>
-        </div>
+        </div>-->
     </body>
 </html>
