@@ -4,6 +4,8 @@ phases:
   install:
     runtime-versions:
         python: 3.8
+    commands:
+        - pip install --upgrade awscli
   post_build:
     commands:
       - aws s3 sync . $S3_BUCKET
