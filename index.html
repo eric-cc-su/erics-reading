@@ -32,14 +32,23 @@
                 font-weight: normal;
             }
 
+            .books-carousel {
+                text-align: center;
+            }
+
             .book-container {
-                margin: auto;
+                display: inline-block;
+                margin: 0 20px;
+                vertical-align: top;
+                width: 250px;
             }
 
             .book-container .book-cover-img {
                 -webkit-box-shadow: 3px 5px 10px 0px rgba(101,101,101,1);
                 -moz-box-shadow: 3px 5px 10px 0px rgba(101,101,101,1);
                 box-shadow: 3px 5px 10px 0px rgba(101,101,101,1);
+                max-height: 350px;
+                max-width: 250px;
             }
 
             .center-align {
@@ -92,10 +101,6 @@
                     width: 100%;
                 }
 
-                /* .jumbotron {
-                    flex-direction: column;
-                } */
-
                 .book-title-text-container {
                     padding-left: 0;
                 }
@@ -111,28 +116,21 @@
         <div class="jumbotron">
             <h1 class="site-title-header">Eric's Reading:</h1>
             <div class="books-carousel">
-                <div class="book-container" style="width: 248px;">
+                <div class="book-container">
                     <img class="book-cover-img" src="make_your_mark.jpg" alt="Make your Mark cover image" />
                     <div class="book-title-text-container center-align">
                         <h2 class="book-title">Make Your Mark: The Creative's Guide to Building a Business with Impact</h2>
                         <h4 class="book-author">99U</h4>
                     </div>
                 </div>
+                <div class="book-container">
+                    <img class="book-cover-img" src="hp_order_of_the_phoenix.jpg" alt="Harry Potter and the Order of the Phoenix cover image" />
+                    <div class="book-title-text-container center-align">
+                        <h2 class="book-title">Harry Potter and the Order of the Phoenix</h2>
+                        <h4 class="book-author">J. K. Rowling</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--<div class="jumbotron center-align">
-            <div class="column-left">
-                <div class="title-text-container center-align">
-                    <h1>Eric's Reading:</h1>
-                    <!--<h4>A website of what Eric's reading and what Eric has read.</h4>--
-                </div>
-            </div>
-            <div class="column-right">
-                <div class="book-title-text-container">
-                    <h2>Fluent Forever</h2>
-                    <h4>Gabriel Wyner</h4>
-                </div>
-            </div>
-        </div>-->
     </body>
 </html>
