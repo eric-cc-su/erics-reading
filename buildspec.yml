@@ -1,0 +1,6 @@
+version: 0.1
+
+phases:
+  post_build:
+    commands:
+      - aws s3 sync . $S3_BUCKET
