@@ -46,12 +46,12 @@ h4, h5, h6 {
     position: absolute;
 }
 
-.book-title-text-container h2,
-.book-title-text-container h4 {
+.book-title-text-container {
     font-style: italic;
 }
 
-.book-title-text-container .book-title {
+.book-title-text-container .book-title,
+.book-title-text-container .book-subtitle {
     font-weight: 300;
     margin-bottom: 10px;
 }
