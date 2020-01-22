@@ -8,4 +8,4 @@ phases:
         - pip install --upgrade awscli
   post_build:
     commands:
-      - aws s3 sync ./src $S3_BUCKET --delete true
+      - aws s3 sync ./src $S3_BUCKET --delete
