@@ -7,8 +7,30 @@ body {
     margin: 0;
 }
 
+a {
+    color: #FFFFFF;
+}
+
 h4, h5, h6 {
     font-weight: normal;
+}
+
+#about-jumbotron {
+    text-align: center;
+}
+
+#about-jumbotron a:hover {
+    color: #444444;
+}
+
+#about-jumbotron h2, h3 {
+    font-weight: 300;
+}
+
+#about-title {
+    color: #FFFFFF;
+    margin-top: 0;
+    padding-top: 25%;
 }
 
 .books-carousel {
@@ -36,6 +58,17 @@ h4, h5, h6 {
 
 .column-left, .column-right {
     width: 50%;
+}
+
+.footer {
+    background-color: #444444;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer .copyright-text {
+    color: #FFFFFF;
+    margin: 5px 0;
 }
 
 .jumbotron {
@@ -74,6 +107,30 @@ h4, h5, h6 {
     margin-bottom: 30px;
     margin-top: 0;
     padding-top: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+    #about-title {
+        padding-top: 55%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    #about-title {
+        padding-top: 40%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    #about-title {
+        padding-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #about-title {
+        padding-top: 20%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
