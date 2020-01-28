@@ -43,7 +43,6 @@ h4, h5, h6 {
     background: linear-gradient(180deg, rgba(91,197,255,1) 0%, rgba(33,177,255,1) 100%);
     min-height: 100%;
     min-width: 100%;
-    position: absolute;
 }
 
 .book-title-text-container {
@@ -73,7 +72,8 @@ h4, h5, h6 {
 
 .site-title-header {
     margin-bottom: 30px;
-    margin-top: 60px;
+    margin-top: 0;
+    padding-top: 60px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -88,9 +88,5 @@ h4, h5, h6 {
     .book-title-text-container {
         padding-top: 0;
         padding-left: 0;
-    }
-
-    .jumbotron {
-        padding-bottom: 20px;
     }
 }
