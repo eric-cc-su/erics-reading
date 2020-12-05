@@ -1,0 +1,11 @@
+User Info
+https://www.goodreads.com/user/show/<USER-ID>.xml?key=<KEY>
+
+User shelf - currently reading
+https://www.goodreads.com/review/list/<USER-ID>.xml?key=<KEY>&v=2&shelf=currently-reading
+
+Book Information
+https://www.goodreads.com/book/show/<BOOK-ID>.xml?key=<KEY>
+
+Book photo image (attained thru book information request)
+https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/<MYSTERY-ID>/<BOOK-ID>.jpg
